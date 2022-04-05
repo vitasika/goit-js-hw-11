@@ -29,6 +29,8 @@ $color: #49b8e5,
     display: flex;
     justify-content: center;
     padding: 40px;
+    background-color: #49e5557d;
+    border-bottom: solid 1px #1200d6;
 }
 
 .input__search-form {
@@ -43,13 +45,14 @@ $color: #49b8e5,
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #bdbdbd;
-    border-radius: 0.25rem;
+    border-radius: 10px;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin-right: 40px;
 }
 
 .input__search-form:focus {
-    border-color: hsl(245, 100%, 42%);
-    box-shadow: 0 0 0 3px hsla(245, 100%, calc(42% + 40%), 0.8);
+    border-color: #1200d6;
+    box-shadow: 0 0 0 3px #2a92d0;
     outline: 3px solid transparent;
 }
 
@@ -58,21 +61,24 @@ $color: #49b8e5,
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    color: #1200d6;
     background-clip: padding-box;
-    border-radius: 0.25rem;
+    border-radius: 10px;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     cursor: pointer;
-    margin-left: 20px;
-    background-color: slateblue;
-    border: 1px solid slateblue;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #e6e90c;
+    border: 1px solid #2a92d0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-        background-color: aqua;
-        border: 1px solid aqua;
-        outline: aqua;
+        background-color: #3a88c8;
+        border: 1px solid #1200d6;
+        outline: #3a88c8;
+        color: #e6e90c;
+        box-shadow: 0 0 0 3px #1200d6;
     }
 }
 
