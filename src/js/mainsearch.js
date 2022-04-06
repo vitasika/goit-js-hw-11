@@ -72,7 +72,7 @@ async function onLoadMore() {
     });
 
     if (galleryApiService.page > urlObj.data.totalHits / galleryApiService.per_page) {
-      refs.brtMore.classList.add('is-hidden');
+      refs.loadMoreEl.classList.add('is-hidden');
       return Notiflix.Notify.success('Your search has come to an end');
     }
     } catch (error) {
